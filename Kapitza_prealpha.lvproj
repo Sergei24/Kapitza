@@ -27,6 +27,11 @@
 					<Item Name="IV_data.lvclass" Type="LVClass" URL="../Classes/2D/IV/data/IV_data.lvclass"/>
 					<Item Name="IV_meas.lvclass" Type="LVClass" URL="../Classes/2D/IV/meas/IV_meas.lvclass"/>
 				</Item>
+				<Item Name="RT" Type="Folder">
+					<Item Name="RT.lvclass" Type="LVClass" URL="../Classes/2D/RT/RT.lvclass"/>
+					<Item Name="RT_data.lvclass" Type="LVClass" URL="../Classes/2D/RT/data/RT_data.lvclass"/>
+					<Item Name="RT_meas.lvclass" Type="LVClass" URL="../Classes/2D/RT/meas/RT_meas.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="Abstract" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
@@ -34,6 +39,11 @@
 					<Item Name="Experiment2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Experiment/Experiment2D/Experiment2D.lvclass"/>
 					<Item Name="Data2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Data/Data2D/Data2D.lvclass"/>
 					<Item Name="Measurement2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Measurement/Measurement2D/Measurement2D.lvclass"/>
+				</Item>
+				<Item Name="3D" Type="Folder">
+					<Item Name="Experiment3D.lvclass" Type="LVClass" URL="../Classes/Abstract/Experiment/Experiment3D/Experiment3D.lvclass"/>
+					<Item Name="Measurement3D.lvclass" Type="LVClass" URL="../Classes/Abstract/Measurement/Measurement3D/Measurement3D.lvclass"/>
+					<Item Name="Data3D.lvclass" Type="LVClass" URL="../Classes/Abstract/Data/Data3D/Data3D.lvclass"/>
 				</Item>
 				<Item Name="Instrument.lvclass" Type="LVClass" URL="../Classes/Abstract/Instrument/Instrument/Instrument.lvclass"/>
 				<Item Name="Simulator.lvclass" Type="LVClass" URL="../Classes/Abstract/Instrument/Simulator/Simulator.lvclass"/>
@@ -95,6 +105,8 @@
 		</Item>
 		<Item Name="IV.vi" Type="VI" URL="../IV.vi"/>
 		<Item Name="Kapitza Main.vi" Type="VI" URL="../Kapitza Main.vi"/>
+		<Item Name="NewStep.vi" Type="VI" URL="../Misc/NewStep.vi"/>
+		<Item Name="RT.vi" Type="VI" URL="../RT.vi"/>
 		<Item Name="Simulator.vi" Type="VI" URL="../Drivers/Simulator.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
