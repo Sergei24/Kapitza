@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="14008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -23,22 +23,24 @@
 		<Item Name="Classes" Type="Folder">
 			<Item Name="2D" Type="Folder">
 				<Item Name="IV" Type="Folder">
+					<Property Name="NI.SortType" Type="Int">3</Property>
 					<Item Name="IV.lvclass" Type="LVClass" URL="../Classes/2D/IV/IV.lvclass"/>
-					<Item Name="IV_data.lvclass" Type="LVClass" URL="../Classes/2D/IV/data/IV_data.lvclass"/>
 					<Item Name="IV_meas.lvclass" Type="LVClass" URL="../Classes/2D/IV/meas/IV_meas.lvclass"/>
+					<Item Name="IV_data.lvclass" Type="LVClass" URL="../Classes/2D/IV/data/IV_data.lvclass"/>
 				</Item>
 				<Item Name="RT" Type="Folder">
+					<Property Name="NI.SortType" Type="Int">3</Property>
 					<Item Name="RT.lvclass" Type="LVClass" URL="../Classes/2D/RT/RT.lvclass"/>
-					<Item Name="RT_data.lvclass" Type="LVClass" URL="../Classes/2D/RT/data/RT_data.lvclass"/>
 					<Item Name="RT_meas.lvclass" Type="LVClass" URL="../Classes/2D/RT/meas/RT_meas.lvclass"/>
+					<Item Name="RT_data.lvclass" Type="LVClass" URL="../Classes/2D/RT/data/RT_data.lvclass"/>
 				</Item>
 			</Item>
 			<Item Name="Abstract" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="2D" Type="Folder">
 					<Item Name="Experiment2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Experiment/Experiment2D/Experiment2D.lvclass"/>
-					<Item Name="Data2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Data/Data2D/Data2D.lvclass"/>
 					<Item Name="Measurement2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Measurement/Measurement2D/Measurement2D.lvclass"/>
+					<Item Name="Data2D.lvclass" Type="LVClass" URL="../Classes/Abstract/Data/Data2D/Data2D.lvclass"/>
 				</Item>
 				<Item Name="3D" Type="Folder">
 					<Item Name="Experiment3D.lvclass" Type="LVClass" URL="../Classes/Abstract/Experiment/Experiment3D/Experiment3D.lvclass"/>
@@ -46,18 +48,23 @@
 					<Item Name="Data3D.lvclass" Type="LVClass" URL="../Classes/Abstract/Data/Data3D/Data3D.lvclass"/>
 				</Item>
 				<Item Name="Instrument.lvclass" Type="LVClass" URL="../Classes/Abstract/Instrument/Instrument/Instrument.lvclass"/>
-				<Item Name="Simulator.lvclass" Type="LVClass" URL="../Classes/Abstract/Instrument/Simulator/Simulator.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="Misc" Type="Folder">
 			<Item Name="CreateDateNamedDirectory.vi" Type="VI" URL="../Misc/CreateDateNamedDirectory.vi"/>
+			<Item Name="CreateSweep.vi" Type="VI" URL="../Misc/CreateSweep.vi"/>
 			<Item Name="CreateTypeNamedDirectory.vi" Type="VI" URL="../Misc/CreateTypeNamedDirectory.vi"/>
 			<Item Name="Derivative.vi" Type="VI" URL="../Misc/Derivative.vi"/>
 			<Item Name="File_test.vi" Type="VI" URL="../Misc/File_test.vi"/>
 			<Item Name="FromBaseToMicro.vi" Type="VI" URL="../Misc/FromBaseToMicro.vi"/>
 			<Item Name="FromMicroToBase.vi" Type="VI" URL="../Misc/FromMicroToBase.vi"/>
-			<Item Name="InitionalizeInstruments.vi" Type="VI" URL="../Misc/InitionalizeInstruments.vi"/>
-			<Item Name="To Origin File dYdX.vi" Type="VI" URL="../Misc/To Origin File dYdX.vi"/>
+			<Item Name="InitionalizeInstruments2D.vi" Type="VI" URL="../Misc/InitionalizeInstruments2D.vi"/>
+			<Item Name="InitionalizeInstruments3D.vi" Type="VI" URL="../Misc/InitionalizeInstruments3D.vi"/>
+			<Item Name="NewStep.vi" Type="VI" URL="../Misc/NewStep.vi"/>
+			<Item Name="SaveFinalFile.vi" Type="VI" URL="../Misc/SaveFinalFile.vi"/>
+			<Item Name="SaveMeasurements.vi" Type="VI" URL="../Misc/SaveMeasurements.vi"/>
+			<Item Name="test3Dgraph.vi" Type="VI" URL="../Misc/test3Dgraph.vi"/>
+			<Item Name="To Origin File XYdYdX.vi" Type="VI" URL="../Misc/To Origin File XYdYdX.vi"/>
 			<Item Name="To Origin File.vi" Type="VI" URL="../Misc/To Origin File.vi"/>
 		</Item>
 		<Item Name="Project Documentation" Type="Folder">
@@ -98,18 +105,31 @@
 			<Item Name="Kapitza Error Handler - Message Handling Loop.vi" Type="VI" URL="../support/Kapitza Error Handler - Message Handling Loop.vi"/>
 		</Item>
 		<Item Name="Templates" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="2D_template.vi" Type="VI" URL="../2D_template.vi"/>
+			<Item Name="3D_template.vi" Type="VI" URL="../Classes/Abstract/3D_template.vi"/>
 			<Item Name="2DExperiment_template.vit" Type="VI" URL="../Templates/2DExperiment_template.vit"/>
 		</Item>
 		<Item Name="Type Definitions" Type="Folder">
 			<Item Name="Kapitza UI Data.ctl" Type="VI" URL="../controls/Kapitza UI Data.ctl"/>
 		</Item>
 		<Item Name="IV.vi" Type="VI" URL="../IV.vi"/>
-		<Item Name="Kapitza Main.vi" Type="VI" URL="../Kapitza Main.vi"/>
-		<Item Name="NewStep.vi" Type="VI" URL="../Misc/NewStep.vi"/>
 		<Item Name="RT.vi" Type="VI" URL="../RT.vi"/>
 		<Item Name="Simulator.vi" Type="VI" URL="../Drivers/Simulator.vi"/>
+		<Item Name="Simulator1.vi" Type="VI" URL="../Drivers/Simulator1.vi"/>
+		<Item Name="Simulator2.vi" Type="VI" URL="../Drivers/Simulator2.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="3D Plot Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot Datatype/3D Plot Datatype.lvclass"/>
+				<Item Name="3D Plot.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/3D Plot/3D Plot.lvclass"/>
+				<Item Name="3D Surface Datatype.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Surface/3D Surface Datatype/3D Surface Datatype.lvclass"/>
+				<Item Name="3D Surface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Surface/3D Surface/3D Surface.lvclass"/>
+				<Item Name="3D Surface.xctl" Type="XControl" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Surface/3D Surface XCtrl/3D Surface.xctl"/>
+				<Item Name="3DMathPlot Action String.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Action String.ctl"/>
+				<Item Name="3DMathPlot Action String.vi" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Action String.vi"/>
+				<Item Name="3DMathPlot Ctrl Act Cluster.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Cluster.ctl"/>
+				<Item Name="3DMathPlot Ctrl Act Queue.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot Ctrl Act Queue.ctl"/>
+				<Item Name="3DMathPlot State Class.ctl" Type="VI" URL="/&lt;vilib&gt;/Math Plots/3D Math Plots/3D Plot/Action String/3DMathPlot State Class.ctl"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="cfis_Get File Extension Without Changing Case.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Get File Extension Without Changing Case.vi"/>
 				<Item Name="cfis_Replace Percent Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/cfis_Replace Percent Code.vi"/>
@@ -119,6 +139,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Close File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Close File+.vi"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
 				<Item Name="compatCalcOffset.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatCalcOffset.vi"/>
 				<Item Name="compatFileDialog.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatFileDialog.vi"/>
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
@@ -128,6 +149,7 @@
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
+				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
 				<Item Name="Dynamic To Waveform Array.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Dynamic To Waveform Array.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
@@ -136,6 +158,7 @@
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
+				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi"/>
 				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi"/>
 				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi"/>
@@ -143,11 +166,16 @@
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
+				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
+				<Item Name="LV3DPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LV3DPointTypeDef.ctl"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_3D Picture Control.lvlib" Type="Library" URL="/&lt;vilib&gt;/picture/3D Picture Control/NI_3D Picture Control.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_Math Plot Private Lib.lvlib" Type="Library" URL="/&lt;vilib&gt;/Math Plots/Plot Private Lib/NI_Math Plot Private Lib.lvlib"/>
+				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
@@ -160,6 +188,7 @@
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
 				<Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write Characters To File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Characters To File.vi"/>
@@ -169,6 +198,7 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write File+ (string).vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
@@ -197,7 +227,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{E7BFF366-DAB8-43B4-AA23-0662F14B8EC9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Kapitza Main.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref"></Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
